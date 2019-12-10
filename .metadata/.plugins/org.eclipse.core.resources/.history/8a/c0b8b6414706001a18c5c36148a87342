@@ -1,0 +1,52 @@
+package CharEng;
+
+public class Challenge {
+	public static void missingLetter(String[]arr) {
+		//String engChar [] = new String[26];
+		String missChar = null;
+		int arrLength;
+		boolean lowCase = true;
+		String [] engUpChar = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","T","S","U","V","W","X","Y","Z"};
+		if(arr.length <= 2)
+			System.out.println("please insert more than 2 charactors");
+		else 
+			for(int i = 0; i <= engUpChar.length-1; i++) {
+				if(engUpChar[i].equalsIgnoreCase(arr[0])) {
+					if(engUpChar[i].equals(arr[i])) {
+						lowCase = false;
+					}
+					arrLength = (i+arr.length)-1;
+						for(int j = i; j <= arrLength; j++) {
+							for(int k = 0; k <= arr.length; k++) {
+								String fLetter = engUpChar[j];
+								String sLetter = arr[k].toUpperCase();
+								if(engUpChar[j] != arr[k].toUpperCase()) {
+									if(lowCase = true) {
+										missChar = engUpChar[j];
+										System.out.println(missChar);
+										break;
+									}else {
+										missChar = engUpChar[j].toLowerCase();
+										System.out.println(missChar);
+										break;
+									}
+								}
+							}	
+							break;
+						}
+				}
+				break;
+			}
+		
+		
+		
+		
+		
+		
+		
+		
+		 
+			
+	}
+
+}

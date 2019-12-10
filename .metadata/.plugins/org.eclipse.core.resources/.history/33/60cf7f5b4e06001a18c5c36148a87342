@@ -1,0 +1,13 @@
+package CharEng;
+
+public class Callchallenge {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [] arr = {"O","Q","R","S"};
+		Challenge mLetter = new Challenge();
+		mLetter.missingLetter(arr);
+
+	}
+
+}
